@@ -37,5 +37,5 @@
   </scroll-view>
 </view>
 <view class='list_footer'>
-  <text>定制发现更多服务</text>
+  <text catchtap='makePhoneCall'>定制发现更多服务</text>
 </view>

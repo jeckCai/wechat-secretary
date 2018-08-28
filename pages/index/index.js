@@ -60,6 +60,15 @@ Page({
     
     
   },
+
+  makePhoneCall:function(){
+    wx.makePhoneCall({
+      phoneNumber: '18617270763',
+      success:function(){
+        
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
