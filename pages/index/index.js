@@ -27,17 +27,25 @@ Page({
     this.setData({
       inputValue: event.detail.value
     })
-
+  },
+  onChange:function(event){
+    let _this =this;
+    _this.setData({
+      inputValue:event.detail.value
+    })
+    _this.shareChange(event.detail.value)
   },
   /**
    * 
    *处理查询 
    */
-  shareChange: function () {
+  shareChange: function (_info) {
+
     let _this = this, newList=null;
-    if (_this.data.inputValue){
+    if (_this.data.inputValue || _info){
+      let remark = _this.data.inputValue ? _this.data.inputValue:_info
       newList = _this.data.list.filter((item) => {
-        return item.name.includes(_this.data.inputValue)
+        return item.name.includes(remark)
       });
       if (newList.length>0){
         _this.setData({
@@ -73,41 +81,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
 
   },
 

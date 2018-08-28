@@ -19,7 +19,7 @@
   <!-- 占用位置 -->
   <view class='share'></view>
   <view class='share_btn'>
-    <input placeholder='这个是搜索用的！' bindinput='onChangeInput' value='{{inputValue}}'></input>
+    <input placeholder='这个是搜索用的！' bindinput='onChangeInput' value='{{inputValue}}' bindconfirm='onChange'></input>
     <button bindtap='shareChange'>搜索</button>
   </view>
   <view class='container'><view class='body'></view></view>
