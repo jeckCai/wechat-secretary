@@ -65,7 +65,7 @@ Page({
     wx.makePhoneCall({
       phoneNumber: '18617270763',
       success:function(){
-        
+
       }
     })
   },
@@ -115,7 +115,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '人的一生有一个半童年。一个童年在自己小时候，而半个童年在自己孩子的小时候。',
+      path: '/pages/detail/index?id=' + this.data.data.id
+    }
+    
   },
   /**
    * 跳转回前一页 

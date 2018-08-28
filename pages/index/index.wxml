@@ -25,7 +25,7 @@
   <view class='container'><view class='body'></view></view>
 </view>
 <view class='list_scroll'>
-  <scroll-view scroll-y="true" style="height:900rpx" >
+  <scroll-view scroll-y="true" style="height:70vh" >
     <view class='flex_scroll'>
       <view class='item_scroll' wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
         <view class='item_img'>
