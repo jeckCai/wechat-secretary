@@ -1,0 +1,17 @@
+{
+  "pages":[
+    
+    
+    "pages/index/index",
+    "pages/detail/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "debug":true
+}

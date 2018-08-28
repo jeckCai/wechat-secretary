@@ -1,0 +1,41 @@
+<view class='item_bg'>
+  <view class='background'></view>
+  <!--加载中  -->
+  <view class='loading-container' wx:if="{{LOADING}}">
+    <image src='/assets/load.svg'></image>
+  </view>
+  <form report-submit bindsubmit='toTopHandler'>
+    <view class='navigator' style='padding-top:{{STATUSBAR_HEIGHT}}px;background-color: rgba(3, 169, 244, {{opacity}});'>
+      <view class='leftButton' hover-class='hover-class' bindtap='goBackHandler'>
+        <image src='/assets/back.svg'></image>
+      </view>
+      <!--中间标题  -->
+      <view class='title'>
+        <text>我的定制空间</text>
+      </view>
+      <!--右边间隙  -->
+    </view>
+  </form>
+  <!-- 占用位置 -->
+  <view class='share'></view>
+  <view class='share_btn'>
+    <input placeholder='这个是搜索用的！' bindinput='onChangeInput' value='{{inputValue}}'></input>
+    <button bindtap='shareChange'>搜索</button>
+  </view>
+  <view class='container'><view class='body'></view></view>
+</view>
+<view class='list_scroll'>
+  <scroll-view scroll-y="true" style="height:900rpx" >
+    <view class='flex_scroll'>
+      <view class='item_scroll' wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+        <view class='item_img'>
+          <!-- <text class='item_number'>NO:{{item.id}}</text> -->
+        </view>
+        <text class='item_text'>{{item.name}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class='list_footer'>
+  <text>定制发现更多服务</text>
+</view>

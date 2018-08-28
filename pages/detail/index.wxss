@@ -1,0 +1,207 @@
+.navigator {
+  background-color: rgba(3, 169, 244, 0);
+  height: 44px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+}
+.leftButton {
+  width: 50px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftButton > image {
+  width: 25px;
+  height: 25px;
+}
+.title {
+  height: 44px;
+  margin-right: 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title > text {
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.header_image {
+  width: 100%;
+  height: 250px;
+}
+
+.container {
+  width: 100%;
+  margin-top: -64px;
+  left: 0;
+  position: absolute;
+}
+
+.body {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 5px 20px -5px #DDD;
+  border-radius: 10px;
+  margin: 20px;
+}
+.pic_author_action{
+  position: absolute;
+
+}
+.pic_author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  position: relative;
+  /* border-bottom: 1px dashed #EEE; */
+}
+
+
+.pic_lift{
+  position: absolute;
+  top: 10%;
+  right: 80rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.pic_right{
+  position: absolute;
+  top: 10%;
+  right: 10rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.pic_author > text {
+  font-size: 12px;
+  color: #666;
+  font-weight: 100;
+}
+.date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.date > .day {
+  font-size: 42px;
+  color: #333;
+  font-weight: 200;
+  margin-top: 20px;
+}
+.date > .other {
+  font-size: 14px;
+  color: #666;
+  font-weight: 100;
+  border-bottom: 1px solid #EEE;
+  padding: 0px 10px 10px 10px;
+}
+
+.author {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.author > text {
+  font-size: 12px;
+  color: #666;
+  font-weight: 100;
+}
+
+.content {
+  padding: 20px;
+}
+.content > text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(238, 238, 238, 0.5);
+  margin: 20px;
+  padding: 20px 0px;
+}
+.action-cell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cell-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #EEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell-icon > image {
+  width: 20px;
+  height: 20px;
+}
+.cell-title > text {
+  font-size: 12px;
+  color: #999;
+  margin: 2px;
+}
+.action-cell-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.pic_author-button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-container > image {
+  width: 30px;
+  height: 30px;
+  animation: loading 800ms infinite ease;
+}
+
+/*加载动画  */
+@keyframes loading {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
